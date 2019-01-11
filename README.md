@@ -48,6 +48,12 @@ Hello World!
 
 If you've got here, you now have an isolated Python environment that's setup correctly and good to go!
 
+If you want to get out of the virtual environment, just type:
+
+```
+$ deactivate
+```
+
 ## Preparing Twitter
 
 1. Setup a Twitter App.
