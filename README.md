@@ -117,4 +117,6 @@ The expectations of the assignment are:
   * Date and time of the tweet formatted to PST.
   * The JSON MAY contain a [Twitter Media object](https://developer.twitter.com/en/docs/tweets/data-dictionary/overview/entities-object#media). If it does contain a media object, I'd like to know the TYPE of the media (photo, video etc.)
   * The text of the tweet (watch out for emoji's)
-3. Write our a CSV file call results.csv which contains the information from 2 in a CSV format (I should be able to load this into Google Sheets and see the list of Tweets extracted)
+3. Write the data out to a CSV file called results.csv which contains the information from step 2 in a CSV format (I should be able to load this into Google Sheets and see the list of Tweets extracted). Close the file.
+4. Open the file, read the data from the CSV file and replace any mention of "superbowl" (any case) with "GreenPark".
+5. Write this new data into a file called results.json in JSON format.
