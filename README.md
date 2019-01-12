@@ -104,7 +104,7 @@ You'll be working with the Twitter Statuses endpoint, (documented here)[https://
 The expectations of the assignment are:
 1. Well commented code. Explain your thinking as needed and what you're doing.
 2. Well structured code. Use clear variable names and good use of functions.
-3. You MUST include at least one (module)[https://docs.python.org/3/reference/import.html] (import) that from a sub-directory (demo code organization) that you create and contains some of your code and functions. This could be some simple functions you call or even better, a (python class)[https://docs.python.org/3/tutorial/classes.html] you use to manage Tweepy (consider moving the Tweepy initialization into the __init__ of the class and pass the various KEYS to the class when you use it).
+3. You MUST include at least one (module)[https://docs.python.org/3/reference/import.html] you create from a sub-directory (to demo code organization). It should contain some of your code and functions. Ideally this will contain a (python class)[https://docs.python.org/3/tutorial/classes.html] you use to manage Tweepy (consider moving the Tweepy initialization into the __init__ of the class and pass the various KEYS to the class when you use it).
 4. You're free to rename function etc. (in fact it's encouraged).  
 5. There should be some basic error handling. In particular, handle an error for bad keys or a failed call to Tweepy (failed network condition perhaps or just twitter derping out). What happens if you run with your network (wifi) turned off?
 
