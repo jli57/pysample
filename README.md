@@ -1,13 +1,13 @@
 # pysample
-This is a basic python sample app with instructions for you to test and set your
-environment up.
+This is a basic python sample app with instructions for you to test and configure your
+environment.
 
-Once configured, you can complete the assignment.
+Once you get the basic configuration completed, you'll be ready to start the assignment.
 
 ## Setting up basic python (assuming a mac)
 
 - [ ] Setup [Brew](https://brew.sh/) if you don't already have it installed.
-- [ ] Install Python3
+- [ ] Install Python3 - NB We're using Python3 for this assignment, not 2.
 
 ```
 $ brew install Python
@@ -58,9 +58,9 @@ $ deactivate
 
 1. Setup a Twitter App.
 
-You'll need a Twitter account and create a Twitter app go to [developer.twitter.com](https://developer.twitter.com/en/apps)
+You'll need a Twitter account and also you'll need to create a Twitter app. To create an App go to [developer.twitter.com](https://developer.twitter.com/en/apps)
 
-2. Create a file in your project directory called keys.json, copy the following json code and fill in the values the information from the new Twitter App.
+2. Create a file in your project directory called keys.json, copy the following json code and fill in the values the information from the new Twitter App. Note that .gitignore is set to ignore the keys.json file so it won't be checked in, keeping your credentials local to your machine.
 
 ```
 {"CONSUMER_KEY" : "YOUR_CONSUMER_KEY",
@@ -94,7 +94,7 @@ Comment out (or delete) the following from the do_something function.
 ```
 print('Hello World!')
 ```
-If everything is set up correctly, you'll now get a print of twitter.com/timbull last 20 tweets.
+If everything is set up correctly, you'll now get a print of twitter user [TimBull's](https://twitter.com/timbull) last 20 tweets.
 
 # The assignment
 
@@ -104,8 +104,8 @@ You'll be working with the Twitter Statuses endpoint, [documented here](https://
 The expectations of the assignment are:
 1. Well commented code. Explain your thinking as needed and what you're doing.
 2. Well structured code. Use clear variable names and good use of functions.
-3. You MUST include at least one [module](https://docs.python.org/3/reference/import.html) you create from a sub-directory (to demo code organization). It should contain some of your code and functions. Ideally this will contain a [python class](https://docs.python.org/3/tutorial/classes.html) you use to manage Tweepy (consider moving the Tweepy initialization into the __init__ of the class and pass the various KEYS to the class when you use it).
-4. You're free to rename functions etc. (in fact it's encouraged).  
+3. You MUST include at least one [module](https://docs.python.org/3/reference/import.html) created in a sub-directory (to demo code organization). It should contain some of your code and functions. Ideally this will contain a [python class](https://docs.python.org/3/tutorial/classes.html) that you use to manage Tweepy (consider moving the Tweepy initialization into the __init__ of the class and pass the various KEYS extracted from keys.json to the class when you use it).
+4. You're free to rename functions etc.
 5. There should be some basic error handling. In particular, handle an error for bad keys or a failed call to Tweepy (failed network condition perhaps or just twitter derping out). What happens if you run with your network (wifi) turned off?
 
 ## Task

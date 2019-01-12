@@ -15,21 +15,21 @@ nfc = nfc_east + nfc_west + nfc_north + nfc_south
 
 nfl = afc + nfc
 
-with open('keys.json') as f:
-    data = json.load(f)
+#with open('keys.json') as f:
+#    data = json.load(f)
 
 # Setup the authentication
-auth = tweepy.OAuthHandler(data["CONSUMER_KEY"], data["CONSUMER_SECRET"])
-auth.set_access_token(data["ACCESS_TOKEN"], data["ACCESS_SECRET"])
+#auth = tweepy.OAuthHandler(data["CONSUMER_KEY"], data["CONSUMER_SECRET"])
+#auth.set_access_token(data["ACCESS_TOKEN"], data["ACCESS_SECRET"])
 
 # Create an authenticated connection to the Twitter API using Tweepy
-api = tweepy.API(auth, wait_on_rate_limit=True, wait_on_rate_limit_notify=True, compression=True)
+#api = tweepy.API(auth, wait_on_rate_limit=True, wait_on_rate_limit_notify=True, compression=True)
 
 def do_something():
     ''' This is a function that prints Hello World to the console
     '''
 #    statuses = api.user_timeline(screen_name='timbull')
-#    print(statuses)
+    print(statuses)
     print("Hello world!")
 
 if __name__ == '__main__':
