@@ -98,23 +98,23 @@ If everything is set up correctly, you'll now get a print of twitter.com/timbull
 
 # The assignment
 
-You'll be working with the Twitter Statuses endpoint, (documented here)[https://developer.twitter.com/en/docs/tweets/timelines/api-reference/get-statuses-user_timeline.html] to extract and process tweets from NFL teams.
+You'll be working with the Twitter Statuses endpoint, [documented here](https://developer.twitter.com/en/docs/tweets/timelines/api-reference/get-statuses-user_timeline.html) to extract and process tweets from NFL teams.
 
 ## General expectations
 The expectations of the assignment are:
 1. Well commented code. Explain your thinking as needed and what you're doing.
 2. Well structured code. Use clear variable names and good use of functions.
-3. You MUST include at least one (module)[https://docs.python.org/3/reference/import.html] you create from a sub-directory (to demo code organization). It should contain some of your code and functions. Ideally this will contain a (python class)[https://docs.python.org/3/tutorial/classes.html] you use to manage Tweepy (consider moving the Tweepy initialization into the __init__ of the class and pass the various KEYS to the class when you use it).
-4. You're free to rename function etc. (in fact it's encouraged).  
+3. You MUST include at least one [module](https://docs.python.org/3/reference/import.html) you create from a sub-directory (to demo code organization). It should contain some of your code and functions. Ideally this will contain a [python class](https://docs.python.org/3/tutorial/classes.html) you use to manage Tweepy (consider moving the Tweepy initialization into the __init__ of the class and pass the various KEYS to the class when you use it).
+4. You're free to rename functions etc. (in fact it's encouraged).  
 5. There should be some basic error handling. In particular, handle an error for bad keys or a failed call to Tweepy (failed network condition perhaps or just twitter derping out). What happens if you run with your network (wifi) turned off?
 
 ## Task
-1. Using the NFL list at the top of main (feel free to move this), you should
+1. Using the NFL list at the top of main (feel free to move this list to another module if you like), you should
   * Iterate through all the teams and fetch the last 20 (should be the default) tweets from each team.
 2. Each tweet contains a lot of data. Extract from the JSON just the following from each of these tweets:
   * Tweet ID
   * Name of the team.
   * Date and time of the tweet formatted to PST.
-  * The JSON MAY contain a (Twitter Media object)[https://developer.twitter.com/en/docs/tweets/data-dictionary/overview/entities-object#media]. If it does contain a media object, I'd like to know the TYPE of the media (photo, video etc.)
+  * The JSON MAY contain a [Twitter Media object](https://developer.twitter.com/en/docs/tweets/data-dictionary/overview/entities-object#media). If it does contain a media object, I'd like to know the TYPE of the media (photo, video etc.)
   * The text of the tweet (watch out for emoji's)
 3. Write our a CSV file call results.csv which contains the information from 2 in a CSV format (I should be able to load this into Google Sheets and see the list of Tweets extracted)
