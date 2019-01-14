@@ -8,7 +8,7 @@ class Tweet:
     for field in field_names:
 
       if field == 'name':
-        tweet[field] = d['user'][field]
+        tweet[field] = d['user']['screen_name']
       elif field == 'media_type':
         media_type = []
         try:

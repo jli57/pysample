@@ -8,7 +8,7 @@ class FileHandler:
     self.jsonPath = jsonPath
     self.field_names = field_names
     self.create_csv_file(tweets)
-    self.create_json_file
+    self.create_json_file()
 
   # create csv file
   def create_csv_file( self, tweets ):
@@ -47,6 +47,6 @@ class FileHandler:
 
   # write to json
   def create_json_file( self ):
-    data = self.process_csv_data
+    data = self.process_csv_data()
     with open(self.jsonPath, 'w') as json_file:
       json.dump(data, json_file)
